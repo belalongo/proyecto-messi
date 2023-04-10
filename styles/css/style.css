@@ -53,7 +53,7 @@ img {
 
 .social-media-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -96,9 +96,33 @@ img {
   background-image: url(/img/leosolo.jpg);
   background-size: cover;
   background-position: center;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
+@media only screen and (max-width: 767px) {
+  nav ul {
+    flex-direction: column;
+    align-items: left;
+    font-size: 15px;
+  }
+  nav ul li {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+  .social-media-container,
+  .social-media-icons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .end {
+    font-size: 12px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+}
 /*BIOGRAFIA*/
 body {
   background-color: rgb(35, 34, 34);
@@ -247,19 +271,138 @@ p {
     padding: 12px 50px;
   }
 }
+@media only screen and (max-width: 767px) {
+  body {
+    background-color: rgb(35, 34, 34);
+    display: grid;
+    color: azure;
+    margin-top: 50px;
+  }
+  body .imagenl {
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: auto;
+    border: 5px solid black;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+  body .grid-container {
+    display: grid;
+    grid-template-areas: "leito" "tarjeta1" "tarjeta2" "messi-15" "caño";
+    grid-template-columns: 100px;
+    grid-template-rows: auto 200px 150px 250px 200px;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: flex-start;
+  }
+  body .messi-15 {
+    width: 280px;
+    height: 120px;
+    grid-area: messi15;
+    grid-column: 1;
+    grid-row: 4/5;
+    display: flex;
+    align-self: flex-end;
+    margin-top: 50pxgit;
+    margin-right: -250px;
+  }
+  body .caño {
+    width: 250px;
+    height: 120px;
+    object-fit: cover;
+    grid-area: caño;
+    grid-column: 1;
+    grid-row: 5;
+    margin-top: 40px;
+    margin-left: 45px;
+  }
+  body p {
+    color: azure;
+  }
+  body .card1 {
+    width: 400px;
+    height: 700px;
+    height: auto;
+    grid-area: tarjeta1;
+    padding: 2em;
+    justify-self: end;
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: -15px;
+    margin-bottom: 50px;
+    justify-self: left;
+    font-size: 12px;
+  }
+  body .card1 h3 {
+    display: flex;
+    justify-content: left;
+    font-size: 16px;
+  }
+  body .card2 {
+    width: 400px;
+    height: 700px;
+    grid-area: tarjeta2;
+    padding: 1em;
+    grid-column: 1;
+    grid-row: 3;
+    margin-top: 60px;
+    font-size: 12px;
+  }
+  body .card2 h3 {
+    font-size: 16px;
+  }
+  body .card2 h2,
+  body .card p {
+    margin-bottom: 1em;
+  }
+  body .boton-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  .button {
+    appearance: button;
+    background-color: #120e31;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #840303 4px 4px 0 0, #161515 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+}
 /*CARRERA*/
 .carrera {
   background: radial-gradient(circle, rgba(24, 24, 24, 0.888), rgb(35, 34, 34));
 }
 
 .portada {
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   object-fit: cover;
-  margin-bottom: 100px;
+  overflow: hidden;
+  height: calc(100vh - 100px);
+  width: 100%;
   margin: 0 0 0 0;
+  position: relative;
+  z-index: 0;
 }
 
 .barcelona h3 {
