@@ -98,6 +98,8 @@ img {
     font-style: italic;  
  }
 
+
+ 
  /*pages*/
  
  /*INDEX*/
@@ -284,11 +286,13 @@ body {
 
 .portada{
     width: 100%;
-    height: 90%;
+    height: 100%;
     display: flex;
     justify-content: center;
+    object-fit: cover;
     margin-bottom: 100px;
     margin: 0 0 0 0;
+    
 
 }
 
@@ -298,7 +302,7 @@ body {
         justify-content: center;
         color: #fe616a;
         background-color:rgba(46,59,88,0.85);
-        margin-top: -85px;
+        margin-top: -30px;
     }
 
     .flex-container{
@@ -434,82 +438,164 @@ body {
 
 .grid-contenedor{ 
     display: grid;
-    grid-template-columns: 300px 1fr 1fr;
-    grid-template-rows:300px 1fr 1fr 150px auto;
+    grid-template-columns: 400px 500px auto;
+    grid-template-rows: auto auto auto auto auto;
     grid-template-areas: 
-    "intro regate"
-    "cup regate"
-    "intro leo-lauta"
-    "mas-info equipo";
+    "intro copa copa"
+    "team team mas-info"
+    "regateando . mas-info"
+    "regateando . info"
+    "video video video";
     column-gap: 10px;
+    
 }
 
-.intro-arg{
-    display: contents;
-    background-color: #fe616a;
-    width: 30%;
-    height: 200px;
-    margin-left: 50px;
-    margin-bottom: 30px;
-    font-weight: 200;
-    flex-wrap: wrap;
-    box-shadow: 5px 5px 10px 0 ;
+.intro-arg {
     grid-area: intro;
-    grid-column: 1;
-    grid-row: 1;
+    margin: 25px;
+
+p {
+    width: 450px;
+    font-weight: 400;
+    flex-wrap: wrap;
+    color: #000;
+    background-color: rgba(19,212,237,1);
+    padding: 20px;
+    z-index: 1;
+    box-shadow: rgba(19, 212, 237, 1) 0px 10px 20px, rgba(41, 105, 121, 0.23) 0px 6px 6px;
+}
 
 }
 
-.copa{
+.copa {
+  display: contents;
+
+    .cup{
+        margin-top: 50px;
+        width: 800px;
+        height: 450px;
+        border: 2px double rgba(19,212,237,1);
+        box-shadow: rgba(19, 212, 237, 1) 0px 10px 20px, rgba(41, 105, 121, 0.23) 0px 6px 6px;
+        grid-area: copa;
+        grid-column: 2/ 3;
+        grid-row: 1;
+        z-index: -1;
+    }
+}
+
+
+.team{
     display: contents;
 }
 
-.cup{
+.equipo{
     display: flex;
-    justify-items: center;
-    width: 50%;
-    height: 50%;
-    border-radius: .2em;
-    border: 3px solid black;
-    box-shadow: 4px 4px 20px 2 #120e31;
-    z-index: -1;
-    grid-area: cup;
+    align-content: center;
+    grid-area: team;
+    box-shadow: rgba(19, 212, 237, 1) 0px 10px 20px, rgba(41, 105, 121, 0.23) 0px 6px 6px;
+    width: 900px;
+    height: 650px;
     grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-.equipo {
-    display: flex;
-    justify-content: right;
-    width: 100%;
-    height: 100%;
-    border-radius: .2em;
-    box-shadow: 2px 4px 15px 0;
-    grid-area: equipo;
+    grid-row: 2;
+    margin-left: 10%;
 }
 
 .mas-info{
-    background-color: #fe616a;
-    width: 30%;
-    height: 200px;
+    background-color: rgba(19,212,237,1);
+    width: 80%;
+    height: 45%;
     margin-left: 50px;
-    margin-bottom: 30px;
+    margin-top: 30%;
     font-weight: 200;
     flex-wrap: wrap;
     box-shadow: 5px 5px 10px 0;
     grid-area: mas-info;
+    z-index: 1;
+    grid-column: 3;
+    grid-row: 2/3;
+    box-shadow: rgba(19, 212, 237, 1) 0px 10px 20px, rgba(41, 105, 121, 0.23) 0px 6px 6px;
+    padding: 20px;
 
-    .leo-lauta{
-        grid-area: leo-lauta;
-    }
-
-    .regate{
-        grid-area: regate;
-        grid-column: 2;
-        grid-row: 1;
+    p{
+        color: #000;
     }
 }
 
+.info{
+    display: contents;
+    grid-area: info;
+    box-shadow: rgba(19, 212, 237, 1) 0px 10px 20px, rgba(41, 105, 121, 0.23) 0px 6px 6px;
+
+    p{
+        background-color: rgba(19,212,237,1);
+        color: #000;
+        width: 70%;
+        height: 40%;
+        box-shadow: rgba(19, 212, 237, 1) 0px 10px 20px, rgba(41, 105, 121, 0.23) 0px 6px 6px;
+        padding: 20px;
+        grid-column: 3;
+        grid-row: 3;
+        margin-left: 0%;
+        margin-top: 45%;
+        justify-self: left;
+    }
+}
+
+.regateando{
+display: contents;
+
+.regate{
+    grid-area: regateando;
+    grid-row: 3/4;
+    grid-column: 1/2;
+    margin-left: 20%;
+    width: 950px;
+    height: 650px;
+    z-index: 1;
+}   
+
+}
+
+.video {
+    display: flex;
+    grid-area: video;
+    grid-column: 1/2/3;
+    grid-row: 5;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+
 /*FOTOS Y VIDEOS*/
 
+.body-carousel{
+    width: 100%;
+    height: calc(100vh - 100px);
+    overflow: hidden;
 
+.carousel {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+
+  .carousel-item img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+  }
+
+}
