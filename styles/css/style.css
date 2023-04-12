@@ -282,20 +282,9 @@ li {
 }
 
 /*SELECCION*/
-.grid-contenedor {
-  display: grid;
-  grid-template-columns: 400px 500px auto;
-  grid-template-rows: auto auto auto auto auto;
-  grid-template-areas: "intro copa copa" "team team mas-info" "regateando . mas-info" "regateando . info" "video video video";
-  column-gap: 10px;
-}
-
 .intro-arg {
   grid-area: intro;
-  margin: 25px;
-}
-.intro-arg p {
-  width: 450px;
+  margin-top: 100px;
   font-weight: 400;
   flex-wrap: wrap;
   color: #000;
@@ -305,94 +294,60 @@ li {
   box-shadow: rgb(19, 212, 237) 0px 10px 20px, rgba(41, 105, 121, 0.23) 0px 6px 6px;
 }
 
-.copa {
-  display: contents;
-}
-.copa .cup {
-  margin-top: 50px;
-  width: 800px;
-  height: 450px;
+.cup {
+  width: 100%;
+  height: 100%;
   border: 2px double rgb(19, 212, 237);
   box-shadow: rgb(19, 212, 237) 0px 10px 20px, rgba(41, 105, 121, 0.23) 0px 6px 6px;
-  grid-area: copa;
-  grid-column: 2/3;
-  grid-row: 1;
   z-index: -1;
-}
-
-.team {
-  display: contents;
 }
 
 .equipo {
   display: flex;
-  align-content: center;
   grid-area: team;
   box-shadow: rgb(19, 212, 237) 0px 10px 20px, rgba(41, 105, 121, 0.23) 0px 6px 6px;
-  width: 900px;
-  height: 650px;
-  grid-column: 1/2;
-  grid-row: 2;
-  margin-left: 10%;
+  width: 100%;
+  height: 80%;
+  margin-top: 80px;
 }
 
 .mas-info {
   background-color: rgb(19, 212, 237);
-  width: 80%;
-  height: 45%;
-  margin-left: 50px;
-  margin-top: 30%;
+  width: 100%;
+  margin-top: 150px;
   font-weight: 200;
   flex-wrap: wrap;
   box-shadow: 5px 5px 10px 0;
   grid-area: mas-info;
   z-index: 1;
-  grid-column: 3;
-  grid-row: 2/3;
   box-shadow: rgb(19, 212, 237) 0px 10px 20px, rgba(41, 105, 121, 0.23) 0px 6px 6px;
   padding: 20px;
-}
-.mas-info p {
   color: #000;
+  justify-content: center;
 }
 
 .info {
-  display: contents;
-  grid-area: info;
   box-shadow: rgb(19, 212, 237) 0px 10px 20px, rgba(41, 105, 121, 0.23) 0px 6px 6px;
-}
-.info p {
   background-color: rgb(19, 212, 237);
   color: #000;
-  width: 70%;
-  height: 40%;
+  width: 100%;
   box-shadow: rgb(19, 212, 237) 0px 10px 20px, rgba(41, 105, 121, 0.23) 0px 6px 6px;
   padding: 20px;
-  grid-column: 3;
-  grid-row: 3;
-  margin-left: 0%;
-  margin-top: 45%;
-  justify-self: left;
+  margin-top: 60%;
+  justify-self: right;
+  justify-content: center;
 }
 
-.regateando {
-  display: contents;
-}
-.regateando .regate {
-  grid-area: regateando;
-  grid-row: 3/4;
-  grid-column: 1/2;
-  margin-left: 20%;
-  width: 950px;
-  height: 650px;
+.regate {
+  margin-top: 80px;
+  width: 100%;
   z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .video {
   display: flex;
-  grid-area: video;
-  grid-column: 1/2/3;
-  grid-row: 5;
   justify-content: center;
   margin-bottom: 20px;
 }
