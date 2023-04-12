@@ -199,9 +199,20 @@ body {
 
 
 /*CARRERA*/
+
 li{
   list-style: none;
 }
+
+.header{
+  z-index: 1000;
+}
+
+.portada img{
+  z-index: -1;
+}
+
+
 .carrera{
     background: radial-gradient(circle,rgba(24, 24, 24, 0.888),rgb(35, 34, 34));
     margin: 0;
