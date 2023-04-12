@@ -208,6 +208,8 @@ li {
   background-color: rgba(46, 59, 88, 0.85);
   margin-top: -30px;
   text-decoration: none;
+  width: 100%;
+  height: 30px;
 }
 .carrera .barcelona h5 {
   color: #fe616a;
