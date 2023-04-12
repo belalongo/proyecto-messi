@@ -24,19 +24,30 @@
     <title>Selección Argentina</title>
 </head>
 
-<header>
-    <nav>
-        <ul>
-            <li> <a href="../index.html">Inicio</a></li>
-            <li><a href="./biografia.html">Biografía</a></li>
-            <li><a href="./carrera.html">Carrera</a></li>
-            <li><a href="#">Selección</a></li>
-            <li><a href="./fotos-videos.html">Fotos y Videos</a></li>
-        </ul>
-    </nav>
-</header>
 
 <body>
+
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"> 
+                <!-- <img src="./img/logo.png" alt="logo-messi"> -->
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                  <a class="nav-link" href="./biografia.html">Biografia</a>
+                  <a class="nav-link" href="./carrera.html">Carrera</a>
+                  <a class="nav-link active" aria-current="page" href="./seleccion.html">Seleccion</a>
+                  <a class="nav-link" href="./fotos-videos.html">Fotos y Videos</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
 
     <main class="grid-contenedor">
 
@@ -76,16 +87,18 @@
     </main>
 
     <footer>
-        <div class="social-media-container">
-            <div class="social-media-icons row">
-                <a href="https://twitter.com/messistore" class="mx-3" target="_blank"><i class="fa-brands fa-twitter fa-beat" style="color: #00cdee;"></i></a>
-                <a href="https://www.instagram.com/leomessi/" class="mx-3" target="_blank"><i class="fa-brands fa-instagram fa-beat" style="color: #c21361;"></i></a>
-                <a href="https://www.youtube.com/@LeoMessi" class="mx-3" target="_blank"><i class="fa-brands fa-youtube fa-beat" style="color: red;"></i></a>
-
+        <div id="social-media-container" class="container text-center">
+            <div id="social-media-icons" class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                <div class="col"><a href="https://twitter.com/messistore" class="mx-3" target="_blank"><i
+                            class="fa-brands fa-twitter fa-beat" style="color: #00cdee;"></i></a></div>
+                <div class="col"><a href="https://www.instagram.com/leomessi/" class="mx-3" target="_blank"><i
+                            class="fa-brands fa-instagram fa-beat" style="color: #c21361;"></i></a></div>
+                <div class="col"> <a href="https://www.youtube.com/@LeoMessi" class="mx-3" target="_blank"><i
+                            class="fa-brands fa-youtube fa-beat" style="color: red;"></i></a></div>
             </div>
-        </div>
-        <div class="end">
-        <p class="copy">Copyright © 2023 - Sitio web Sin Fines de Lucro - Políticas de privacidad - Políticas de cookies</p>
+            <div id="end" class="col">
+                <p class="copy">Copyright © 2023 - Sitio web Sin Fines de Lucro - Políticas de privacidad - Políticas de cookies</p>
+            </div>
         </div>
     </footer>
 

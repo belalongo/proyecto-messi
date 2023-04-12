@@ -5,9 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- comentario SEO -->
-    <meta name="comentario SEO" content="Este es un código HTML para una página web dedicada a Leo Messi, un jugador de fútbol argentino. El código incluye metaetiquetas que contienen palabras clave relevantes para el contenido de la página, como "Leo Messi, Selección Argentina, Club de fútbol Barcelona, entre otros. También se hace uso de la biblioteca de iconos Fontawesome para agregar íconos de redes sociales en el pie de página. El código también incluye enlaces a hojas de estilo CSS y fuentes de Google. La página tiene una barra de navegación que permite al usuario acceder a diferentes secciones de la página, como Inicio, Biografía, Carrera, Selección y Fotos y Videos. El pie de página contiene información sobre los derechos de autor y las políticas de privacidad y cookies. El código también incluye un archivo JavaScript para agregar funcionalidades al sitio web.>
+    <meta name="comentario SEO"
+        content="Este es un código HTML para una página web dedicada a Leo Messi, un jugador de fútbol argentino. El código incluye metaetiquetas que contienen palabras clave relevantes para el contenido de la página, como "
+        Leo Messi, Selección Argentina, Club de fútbol Barcelona, entre otros. También se hace uso de la biblioteca de
+        iconos Fontawesome para agregar íconos de redes sociales en el pie de página. El código también incluye enlaces
+        a hojas de estilo CSS y fuentes de Google. La página tiene una barra de navegación que permite al usuario
+        acceder a diferentes secciones de la página, como Inicio, Biografía, Carrera, Selección y Fotos y Videos. El pie
+        de página contiene información sobre los derechos de autor y las políticas de privacidad y cookies. El código
+        también incluye un archivo JavaScript para agregar funcionalidades al sitio web.>
     <!-- keywords -->
-    <meta name="keywords" content="Leo Messi,Messi,Carrera,Selección,Argentina,Fútbol,Estrella del fútbol,Jugador argentino,Club de fútbol,Barcelona,La Liga,Campeonatos,Trofeos, Balón de Oro, Mejor jugador del mundo,Leyenda del fútbol,Redes sociales messi,Twitter messi,Instagram messi,YouTube messi">
+    <meta name="keywords"
+        content="Leo Messi,Messi,Carrera,Selección,Argentina,Fútbol,Estrella del fútbol,Jugador argentino,Club de fútbol,Barcelona,La Liga,Campeonatos,Trofeos, Balón de Oro, Mejor jugador del mundo,Leyenda del fútbol,Redes sociales messi,Twitter messi,Instagram messi,YouTube messi">
     <!-- FONTAWESOME  -->
     <script src="https://kit.fontawesome.com/59c4ffa712.js" crossorigin="anonymous"></script>
     <!--favicon-->
@@ -22,358 +30,401 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&display=swap" rel="stylesheet">
     <!--link animacion -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <title>Carrera</title>
 
 </head>
 
 <body class="carrera">
-    <nav>
-        <ul>
-            <li> <a href="../index.html">Inicio</a></li>
-            <li><a href="./biografia.html">Biografía</a></li>
-            <li><a href="#">Carrera</a></li>
-            <li><a href="./seleccion.html">Selección</a></li>
-            <li><a href="./fotos-videos.html">Fotos y Videos </a></li>
-        </ul>
-    </nav>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="./biografia.html">Biografia</a>
+                        <a class="nav-link active" aria-current="page" href="./carrera.html">Carrera</a>
+                        <a class="nav-link" href="./seleccion.html">Selección</a>
+                        <a class="nav-link" href="./fotos-videos.html">Fotos y Videos</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <div class="portada">
-        <img src="../img/portadaleo.jpg" alt="portada-de-messi">
-    </div>
+    <div class="portada"></div>
 
     <section class="barcelona">
         <h3> FC BARCELONA </h3>
-        <div class="flex-container">
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >Champions League</h5>
-                <ul class="champ">
-                    <li>2005/06</li>
-                    <li>2008/09</li>
-                    <li>2010/11</li>
-                    <li>2014/15</li>
-                </ul>
-            </div>
+        <div class="container text-center">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                <div class="col">
+                    <ul class="champ">
+                        <h5 class="animate__animated animate__pulse">Champions League</h5>
+                        <li>2005/06</li>
+                        <li>2008/09</li>
+                        <li>2010/11</li>
+                        <li>2014/15</li>
+                    </ul>
+                </div>
 
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >Laliga</h5>
-                <ul class="laliga">
-                    <li>2004/05</li>
-                    <li>2005/06</li>
-                    <li>2008/09</li>
-                    <li>2009/10</li>
-                    <li>2010/11</li>
-                    <li>2012/13</li>
-                    <li>2014/15</li>
-                    <li>2015/16</li>
-                    <li>2017/18</li>
-                    <li>2018/19</li>
-                </ul>
-            </div>
+                <div class="col">
+                    <ul class="champ">
+                        <h5 class="animate__animated animate__pulse">Champions League</h5>
+                        <li>2005/06</li>
+                        <li>2008/09</li>
+                        <li>2010/11</li>
+                        <li>2014/15</li>
+                    </ul>
+                </div>
 
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >Copa del Rey</h5>
-                <ul>
-                    <li>2008/09</li>
-                    <li>2011/2012</li>
-                    <li>2014/15</li>
-                    <li>2015/16</li>
-                    <li>2016/17</li>
-                    <li>2017/18</li>
-                    <li>2020/21</li>
-                </ul>
-            </div>
+                <div class="col">
+                    <ul class="laliga">
+                        <h5 class="animate__animated animate__pulse">Laliga</h5>
+                        <li>2004/05</li>
+                        <li>2005/06</li>
+                        <li>2008/09</li>
+                        <li>2009/10</li>
+                        <li>2010/11</li>
+                        <li>2012/13</li>
+                        <li>2014/15</li>
+                        <li>2015/16</li>
+                        <li>2017/18</li>
+                        <li>2018/19</li>
+                    </ul>
+                </div>
 
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >Mundial de Clubes</h5>
-                <ul>
-                    <li>2009</li>
-                    <li>2011</li>
-                    <li>2015</li>
-                </ul>
-            </div>
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">Copa del Rey</h5>
+                        <li>2008/09</li>
+                        <li>2011/2012</li>
+                        <li>2014/15</li>
+                        <li>2015/16</li>
+                        <li>2016/17</li>
+                        <li>2017/18</li>
+                        <li>2020/21</li>
+                    </ul>
+                </div>
 
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >Supercopa de Europa</h5>
-                <ul>
-                    <li>2009/10</li>
-                    <li>2011/2012</li>
-                    <li>2015/16</li>
-                </ul>
-            </div>
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">Mundial de Clubes</h5>
+                        <li>2009</li>
+                        <li>2011</li>
+                        <li>2015</li>
+                    </ul>
+                </div>
 
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >Supercopa de España</h5>
-                <ul>
-                    <li>2005/06</li>
-                    <li>2009/10</li>
-                    <li>2010/11</li>
-                    <li>2011/12</li>
-                    <li>2013/14</li>
-                    <li>2016/17</li>
-                    <li>2018/19</li>
-                </ul>
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">Supercopa de Europa</h5>
+                        <li>2009/10</li>
+                        <li>2011/2012</li>
+                        <li>2015/16</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">Supercopa de Europa</h5>
+                        <li>2009/10</li>
+                        <li>2011/2012</li>
+                        <li>2015/16</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">Supercopa de España</h5>
+                        <li>2005/06</li>
+                        <li>2009/10</li>
+                        <li>2010/11</li>
+                        <li>2011/12</li>
+                        <li>2013/14</li>
+                        <li>2016/17</li>
+                        <li>2018/19</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="psg">
         <h3> PARIS SAINT-GERMAIN </h3>
-        <div class="flex-container">
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >League 1</h5>
-                <ul>
-                    <li>2021/22</li>
-                </ul>
-            </div>
+        <div class="container text-center">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">League1</h5>
+                        <li>2021/22</li>
+                    </ul>
+                </div>
 
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >Supercopa de Francia</h5>
-                <ul>
-                    <li>2022/23</li>
-                </ul>
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">Supercopa de Francia</h5>
+                        <li>2022/23</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="arg">
         <h3>ARGENTINA</h3>
-        <div class="flex-container">
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >Copa America</h5>
-                <ul>
-                    <li>2021 (1)</li>
-                </ul>
-            </div>
+        <div class="container text-center">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">Copa America</h5>
+                        <li>2021 (1)</li>
+                    </ul>
+                </div>
 
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >Mundial Sub-20</h5>
-                <ul>
-                    <li>2005 (1)</li>
-                </ul>
-            </div>
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">Mundial Sub-20</h5>
+                        <li>2005 (1)</li>
+                    </ul>
+                </div>
 
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >Medalla Oro JJOO Beijing</h5>
-                <ul>
-                    <li>2008 (1)</li>
-                </ul>
-            </div>
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">Medalla Oro JJOO Beijing</h5>
+                        <li>2008 (1)</li>
+                    </ul>
+                </div>
 
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >Mundial Futbol</h5>
-                <ul>
-                    <li>2022 (1)</li>
-                </ul>
-            </div>
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">Mundial Futbol</h5>
+                        <li>2022 (1)</li>
+                    </ul>
+                </div>
 
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >Finalissima</h5>
-                <ul>
-                    <li>2022 (1)</li>
-                </ul>
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">Finalissima</h5>
+                        <li>2022 (1)</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="individuales">
         <h3>INDIVIDUALES</h3>
-        <div class="flex-container">
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >Balón de Oro</h5>
-                <ul>
-                    <li>2009</li>
-                    <li>2010</li>
-                    <li>2011</li>
-                    <li>2012</li>
-                    <li>2015</li>
-                    <li>2019</li>
-                    <li>2021</li>
-                </ul>
-            </div>
+        <div class="container text-center">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">Balón de Oro</h5>
+                        <li>2009</li>
+                        <li>2010</li>
+                        <li>2011</li>
+                        <li>2012</li>
+                        <li>2015</li>
+                        <li>2019</li>
+                        <li>2021</li>
+                    </ul>
+                </div>
 
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >World Player</h5>
-                <ul>
-                    <li>2009</li>
-                </ul>
-            </div>
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">World Player</h5>
+                        <li>2009</li>
+                    </ul>
+                </div>
 
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >Premio The Best</h5>
-                <ul>
-                    <li>2019</li>
-                    <li>2022</li>
-                </ul>
-            </div>
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">Premio The Best</h5>
+                        <li>2019</li>
+                        <li>2022</li>
+                    </ul>
+                </div>
 
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >Bota de Oro</h5>
-                <ul>
-                    <li>2009/10</li>
-                    <li>2011/12</li>
-                    <li>2012/13</li>
-                    <li>2016/17</li>
-                    <li>2017/18</li>
-                    <li>2018/19</li>
-                </ul>
-            </div>
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">Bota de Oro</h5>
+                        <li>2009/10</li>
+                        <li>2011/12</li>
+                        <li>2012/13</li>
+                        <li>2016/17</li>
+                        <li>2017/18</li>
+                        <li>2018/19</li>
+                    </ul>
+                </div>
 
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >Premio Laureus</h5>
-                <ul>
-                    <li>2019</li>
-                </ul>
-            </div>
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">Premio Laureus</h5>
+                        <li>2019</li>
+                    </ul>
+                </div>
 
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >Pichichi de Laliga</h5>
-                <ul>
-                    <li>2009/10</li>
-                    <li>2011/12</li>
-                    <li>2012/13</li>
-                    <li>2016/17</li>
-                    <li>2017/18</li>
-                    <li>2018/19</li>
-                    <li>2019/20</li>
-                    <li>2020/21</li>
-                </ul>
-            </div>
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">Pichichi de Laliga</h5>
+                        <li>2009/10</li>
+                        <li>2011/12</li>
+                        <li>2012/13</li>
+                        <li>2016/17</li>
+                        <li>2017/18</li>
+                        <li>2018/19</li>
+                        <li>2019/20</li>
+                        <li>2020/21</li>
+                    </ul>
+                </div>
 
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >MVP Laliga</h5>
-                <ul>
-                    <li>2008/09</li>
-                    <li>2009/10</li>
-                    <li>2010/11</li>
-                    <li>2011/12</li>
-                    <li>2012/13</li>
-                    <li>2014/15</li>
-                    <li>2016/17</li>
-                    <li>2017/18</li>
-                    <li>2018/19</li>
-                </ul>
-            </div>
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">MVP Laliga</h5>
+                        <li>2008/09</li>
+                        <li>2009/10</li>
+                        <li>2010/11</li>
+                        <li>2011/12</li>
+                        <li>2012/13</li>
+                        <li>2014/15</li>
+                        <li>2016/17</li>
+                        <li>2017/18</li>
+                        <li>2018/19</li>
+                    </ul>
+                </div>
 
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >Máximo goleador Champions</h5>
-                <ul>
-                    <li>2008/09</li>
-                    <li>2009/10</li>
-                    <li>2010/11</li>
-                    <li>2011/12</li>
-                    <li>2014/15</li>
-                    <li>2018/19</li>
-                </ul>
-            </div>
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">Máximo goleador Champions</h5>
+                        <li>2008/09</li>
+                        <li>2009/10</li>
+                        <li>2010/11</li>
+                        <li>2011/12</li>
+                        <li>2014/15</li>
+                        <li>2018/19</li>
+                    </ul>
+                </div>
 
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >FifaFIFpro</h5>
-                <ul>
-                    <li>2006</li>
-                </ul>
-            </div>
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">FifaFIFpro</h5>
+                        <li>2006</li>
+                    </ul>
+                </div>
 
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >Balón de Oro Mundial</h5>
-                <ul>
-                    <li>2014</li>
-                    <li>2022</li>
-                </ul>
-            </div>
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">Balón de Oro Mundial</h5>
+                        <li>2014</li>
+                        <li>2022</li>
+                    </ul>
+                </div>
 
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >Mejor Jugador Europa</h5>
-                <ul>
-                    <li>2010/11</li>
-                    <li>2014/15</li>
-                </ul>
-            </div>
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">Mejor Jugador Europa</h5>
+                        <li>2010/11</li>
+                        <li>2014/15</li>
+                    </ul>
+                </div>
 
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >Golden Boy</h5>
-                <ul>
-                    <li>2005</li>
-                </ul>
-            </div>
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">Golden Boy</h5>
+                        <li>2005</li>
+                    </ul>
+                </div>
 
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >MVP Copa América</h5>
-                <ul>
-                    <li>2015</li>
-                    <li>2021</li>
-                </ul>
-            </div>
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">MVP Copa América</h5>
+                        <li>2015</li>
+                        <li>2021</li>
+                    </ul>
+                </div>
 
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >Onze d'Or</h5>
-                <ul>
-                    <li>2009</li>
-                    <li>2011</li>
-                    <li>2012</li>
-                    <li>2018</li>
-                </ul>
-            </div>
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">Onze d'Or</h5>
+                        <li>2009</li>
+                        <li>2011</li>
+                        <li>2012</li>
+                        <li>2018</li>
+                    </ul>
+                </div>
 
-            <div class="flex-item">
-                <h5 class="animate__animated animate__pulse" >Trofeo Bravo</h5>
-                <ul>
-                    <li>2007</li>
-                </ul>
+                <div class="col">
+                    <ul>
+                        <h5 class="animate__animated animate__pulse">Trofeo Bravo</h5>
+                        <li>2007</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="records">
         <h3>RECORDS</h3>
-        <div class="flex-container">
-            <div class="flex-item">
-                <li>Máximo goleador histórico con un mismo equipo</li>
-                <li>Máximo goleador histórico del FC Barcelona</li>
-                <li>Máximo goleador histórico de Laliga</li>
-                <li>Máximo goleador del siglo XXI</li>
-                <li>Máximo goleador histórico en el Clásico</li>
-                <li> Record Guiness goleador en un año natural (91 goles)</li>
-                <li>Máximo goleador histórico de selecciones en Sudamérica</li>
-                <li>MVP del mundial 2014 en Brasil y del Mundial 2022 en Qatar</li>
+        <div class="container text-center">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                <div class="col">
+                    <ul>
+                        <li>Máximo goleador histórico con un mismo equipo</li>
+                        <li>Máximo goleador histórico del FC Barcelona</li>
+                        <li>Máximo goleador histórico de Laliga</li>
+                        <li>Máximo goleador del siglo XXI</li>
+                        <li>Máximo goleador histórico en el Clásico</li>
+                        <li> Record Guiness goleador en un año natural (91 goles)</li>
+                        <li>Máximo goleador histórico de selecciones en Sudamérica</li>
+                        <li>MVP del mundial 2014 en Brasil y del Mundial 2022 en Qatar</li>
+                    </ul>
+                </div>
             </div>
 
         </div>
 
-        <div class="flex-container">
-            <div class="flex-item">
-                <li>Jugador de la historia del FC Barcelona con más partidos disputados</li>
-                <li>Jugador de la historia del FC Barcelona con más títulos</li>
-                <li>Máximo goleador en una misma temporada Laliga (50 goles)</li>
-                <li>Máximo goleador histórico de Champions con un mismo club</li>
-                <li>Jugador con más partidos disputados en la historia con Argentina</li>
-                <li>Jugador argentino con más títulos oficiales</li>
-                <li>Máximo goleador argentino en partidos oficiales</li>
-                <li>Máximo goleador histórico de la selección argentina</li>
+        <div class="container text-center">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                <div class="col">
+                    <ul>
+                        <li>Jugador de la historia del FC Barcelona con más partidos disputados</li>
+                        <li>Jugador de la historia del FC Barcelona con más títulos</li>
+                        <li>Máximo goleador en una misma temporada Laliga (50 goles)</li>
+                        <li>Máximo goleador histórico de Champions con un mismo club</li>
+                        <li>Jugador con más partidos disputados en la historia con Argentina</li>
+                        <li>Jugador argentino con más títulos oficiales</li>
+                        <li>Máximo goleador argentino en partidos oficiales</li>
+                        <li>Máximo goleador histórico de la selección argentina</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <div class="footer">
-        <div class="social-media-container">
-            <div class="social-media-icons row">
-                <a href="https://twitter.com/messistore" class="mx-3" target="_blank"><i
-                        class="fa-brands fa-twitter fa-beat" style="color: #00cdee;"></i></a>
-                <a href="https://www.instagram.com/leomessi/" class="mx-3" target="_blank"><i
-                        class="fa-brands fa-instagram fa-beat" style="color: #c21361;"></i></a>
-                <a href="https://www.youtube.com/@LeoMessi" class="mx-3" target="_blank"><i
-                        class="fa-brands fa-youtube fa-beat" style="color: red;"></i></a>
+    <footer>
+        <div id="social-media-container" class="container text-center">
+            <div id="social-media-icons" class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                <div class="col"><a href="https://twitter.com/messistore" class="mx-3" target="_blank"><i
+                            class="fa-brands fa-twitter fa-beat" style="color: #00cdee;"></i></a></div>
+                <div class="col"><a href="https://www.instagram.com/leomessi/" class="mx-3" target="_blank"><i
+                            class="fa-brands fa-instagram fa-beat" style="color: #c21361;"></i></a></div>
+                <div class="col"> <a href="https://www.youtube.com/@LeoMessi" class="mx-3" target="_blank"><i
+                            class="fa-brands fa-youtube fa-beat" style="color: red;"></i></a></div>
+            </div>
+            <div id="end" class="col">
+                <p class="copy">Copyright © 2023 - Sitio web Sin Fines de Lucro - Políticas de privacidad - Políticas de cookies</p>
             </div>
         </div>
+    </footer>
 
-        <div class="end">
-            <p class="copy">Copyright © 2023 - Sitio web Sin Fines de Lucro - Políticas de privacidad - Políticas de
-                cookies</p>
-        </div>
-    </div>
 
 </body>
 
